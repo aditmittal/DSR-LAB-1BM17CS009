@@ -1,0 +1,12 @@
+install.packages("ggplot")
+library(ggplot2)
+set.seed(100)
+x<-rnorm(100,mean=0,sd=1)
+y<-rnorm(100,mean=0,sd=1)
+x
+y
+boxplot(x,y)
+
+dat<-as.data.frame(cbind(x,y))
+View(dat)
+ggplot()+geom_point(data=dat, aes(x=x,y=y),size=3, color="blue")+ggtitle("Scatter plot")+labs(y= "y axis", x = "x axis")

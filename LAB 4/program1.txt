@@ -1,0 +1,23 @@
+  
+//1a
+
+buff_tail<-c(10,1,37,5,12)
+garden_bee<-c(8,3,9,6,4)
+red_tail<-c(18,9,12,4,5)
+carder_bee<-c(8,27,6,23,32)
+honey_bee<-c(12,13,16,9,10)
+dat<-data.frame(buff_tail,garden_bee,red_tail,carder_bee,honey_bee)
+dat
+dat1<-data.matrix(dat)
+dat1
+rownames(dat1) <- c("Thistle","Vipers","Golden Rain","Yell","Green")
+dat1
+
+//1b
+
+integers=c(10,20,30)
+strings=c("abc","def","xyz")
+real_numbers=c(-23.55,14.2,77.0)
+list1=list(integers,strings,real_numbers)
+names(list1)=c("Integers","Strings","Real numbers")
+list1
